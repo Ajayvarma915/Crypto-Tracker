@@ -12,7 +12,6 @@ function App() {
             <Route path="/dashboard" element={<DashBoardPage/>}/>
             <Route path="/coin/:id" element={<CoinPage/>}/>
             <Route path="/compare" element={<ComparePage/>}/>
-            <Route path="/*" element={<h1>Invalid Url....</h1>}/>
             </Routes>
         </BrowserRouter>
   </div>
