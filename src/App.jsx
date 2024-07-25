@@ -12,6 +12,7 @@ function App() {
             <Route path="/dashboard" element={<DashBoardPage/>}/>
             <Route path="/coin/:id" element={<CoinPage/>}/>
             <Route path="/compare" element={<ComparePage/>}/>
+            <Route path="/*" element={<Home/>}/>
             </Routes>
         </BrowserRouter>
   </div>
