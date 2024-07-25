@@ -112,7 +112,7 @@ const SelectCoins = ({crypto1,crypto2,days,setCrypto1,setCrypto2,setDays}) => {
         price1 = price1.Data.Data;
         SettingTwoCoinsData(setChartData, price1, CoinPrices2, Event.target.value, coinInfo2.name);
         setIsLoading(false);
-    },[fetchCoinInfo,days,coinInfo1,CoinPrices1])
+    },[CoinPrices2,coinInfo2.name,days,fetchCoinInfo,setCrypto1])
 
     const handleCoinChange2 = useCallback(async (Event) => {
         setCrypto2(Event.target.value);
@@ -124,7 +124,7 @@ const SelectCoins = ({crypto1,crypto2,days,setCrypto1,setCrypto2,setDays}) => {
         price2 = price2.Data.Data;
         SettingTwoCoinsData(setChartData, CoinPrices1, price2, coinInfo1.name, Event.target.value);
         setIsLoading(false);
-    },[fetchCoinInfo,days,coinInfo2,CoinPrices2]) 
+    },[fetchCoinInfo,days,CoinPrices1,coinInfo1.name,setCrypto2]) 
 
     const handleDaysChange = useCallback(async (Event) => {
         setDays(Event.target.value);
@@ -139,7 +139,7 @@ const SelectCoins = ({crypto1,crypto2,days,setCrypto1,setCrypto2,setDays}) => {
             setCoinPrice2(price2);
             SettingTwoCoinsData(setChartData, price1, price2, coinInfo1.name, coinInfo2.name);
         }
-    },[GetCoinPrices,days])
+    },[coinInfo1.name,coinInfo2.name,crypto1,crypto2,days,setDays])
 
 if (isError) return <h1>Data not found Please try after sometime.</h1>
 

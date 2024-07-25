@@ -58,7 +58,7 @@ const GetCoinPageInfo = ({id}) => {
             SettingChartData(setChartData, PriceDetails);
             setIsLoading(false);
         }
-    },[days,GetCoinPrices])
+    },[coinData.symbol])
     
     if(isError) return <h1>Data not found Please try after sometime.</h1>
     
