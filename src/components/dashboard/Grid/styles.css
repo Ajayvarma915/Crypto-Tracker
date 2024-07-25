@@ -1,0 +1,142 @@
+.grid_container{
+    width: 320px;
+    height: 320px;
+    background-color: var(--darkgrey);
+    border: 2px solid var(--darkgrey);
+    border-radius: 0.7rem;
+    cursor: pointer;
+}
+.grid_container:hover{
+    border: 2px solid var(--green);
+    transition: border 0.5s ease-in-out;
+}
+.grid_container_red:hover{
+    border: 2px solid var(--red);
+    transition: border 0.5s ease-in-out;
+}
+.info_container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin:1.5rem;
+}
+.coin_logo{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+.grid_coin_logo{
+    margin-right: 1rem;
+}
+.coin_symbol{
+    color: var(--white);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin: 0;
+}
+.coin_name{
+    color: var(--grey);
+    font-weight: light;
+    text-transform: capitalize;
+    margin: 0;
+    font-size: 1rem;
+}
+.name_symbol{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.percentage_container{
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 1.5rem;
+}
+.percentage,.percentage1{
+    border: 2px solid var(--green);
+    border-radius: 2rem;
+    padding: 0.5rem 1.21rem;
+    color: var(--green);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    min-width: 60px;
+}
+.percentage:hover,.icon_up:hover,.percentage1:hover{
+    background-color: var(--green);
+    color: var(--white);
+    transition: all 0.3s;
+}
+.red{
+    border: 2px solid var(--red);
+    color: var(--red);
+}
+.green {
+    border: 2px solid var(--green);
+    color: var(--green);
+}
+.red:hover{
+    background-color: var(--red);
+    color: var(--white);
+    transition: all 0.3s;
+}
+.icon_up{
+    border: 2px solid var(--green);
+    border-radius: 50%;
+    min-height: 35px;
+    min-width: 35px;
+    color: var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.grid_icon_up{
+    border: 2px solid var(--green);
+    border-radius: 50%;
+    min-height: 35px;
+    min-width: 35px;
+    color: var(--green);
+    font-size: 1rem;
+    font-weight: 600;
+}
+.icon_down{
+    border-radius: 50%;
+    min-height: 35px;
+    min-width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid_icon_down{
+    border-radius: 50%;
+    min-height: 35px;
+    min-width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price_value{
+    border: none;
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.volume{
+    color: var(--grey);
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left: 1.75rem;
+}
+.percentage1{
+    display: none;
+}
+.grid_icon_up,
+.grid_icon_down {
+    display: none;
+}

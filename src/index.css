@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+ /*------------------root variables--------------------*/
+:root{
+    --white:#fff;
+    --black:#111;
+    --blue:#3a80e9;
+    --grey:#888;
+    --darkgrey:#1b1b1b;
+    --green:#61c96f;
+    --red:#f94141;
+}
+
+body{
+    font-family: Inter;
+    background-color: var(--black);
+}
+
+/*-----------------------custom selection-----------------------*/
+::selection{
+    background-color: blue;
+    color: var(--green);
+}
+/*------------------------custom scrollbar----------------------*/
+::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--black);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: 3rem;
+}
+
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -webkit-user-drag: none;
+}
+
+.Coin_page_container{
+    width: 90%;
+    background-color: var(--darkgrey);
+    border-radius: 1rem;
+    margin:1rem auto;
+}
+.Coin_page_container tbody{
+    display: block;
+    width: 90%;
+    margin:0;
+    padding: 0rem 1rem;
+}
+.coin_page_heading,.coin_page_desc{
+    margin: 1rem;
+}
+.coin_page_desc a{
+    text-decoration: underline;
+}
+.coin_page_desc a:hover{
+    color: var(--blue);
+}
+
+.compare_page_container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 1rem;
+}

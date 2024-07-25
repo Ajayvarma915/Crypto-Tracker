@@ -1,0 +1,27 @@
+.search_bar_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+    background-color: var(--darkgrey);
+    color: var(--grey);
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    gap: 1.5rem;
+}
+.search_bar_container input{
+    width:  100%;
+    font-family: 'inter';
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    background-color: var(--darkgrey);
+    border: none;
+    color: var(--grey);
+}
+.search_bar_container input:focus{
+    outline: none;
+}
+.search_bar{
+    margin: 1rem 0rem;
+}

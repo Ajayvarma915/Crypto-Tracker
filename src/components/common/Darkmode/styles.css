@@ -1,0 +1,6 @@
+.darkMode{
+    background-color: var(--blue);
+}
+.lightMode{
+    background-color: var(--white);
+}

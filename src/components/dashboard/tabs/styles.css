@@ -1,0 +1,17 @@
+.grid_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.list_table{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.list_table td{
+    text-align: center;
+    width: 18%;
+}
